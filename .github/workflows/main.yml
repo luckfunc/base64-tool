@@ -51,4 +51,4 @@ jobs:
             docker pull ${{ secrets.DOCKER_HUB_USERNAME }}/base64-tool:latest
             docker stop base64-tool || true
             docker rm base64-tool || true
-            docker run -d --name base64-tool -p 80:3000 ${{ secrets.DOCKER_HUB_USERNAME }}/base64-tool:latest
+            docker run -d --name base64-tool -p 8080:3000 ${{ secrets.DOCKER_HUB_USERNAME }}/base64-tool:latest
